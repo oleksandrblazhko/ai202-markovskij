@@ -1,1 +1,1 @@
-![alt text](https://github.com/oleksandrblazhko/ai202-markovskij/blob/ai202-markovskij-with_laboratory_work_3/1-SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.5-NFRUserInterfaceINPUT/NFR1.1.png)
+![alt text](https://github.com/oleksandrblazhko/ai202-markovskij/blob/ai202-markovskij-with_laboratory_work_3/1-SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.4-NFRUserInterfaceOUTPUT/NFR1.1.png)
