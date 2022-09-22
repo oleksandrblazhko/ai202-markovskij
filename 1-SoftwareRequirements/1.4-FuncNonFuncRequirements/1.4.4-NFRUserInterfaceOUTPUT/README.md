@@ -1,1 +1,2 @@
-![alt text](https://github.com/oleksandrblazhko/ai202-markovskij/blob/ai202-markovskij-with_laboratory_work_3/1-SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.4-NFRUserInterfaceOUTPUT/Wireframe%20Design.png)
+### Опис вимог до OUTPUT-потоків інтерфейсу користувача
+![alt text](Wireframe%20Design.png)
