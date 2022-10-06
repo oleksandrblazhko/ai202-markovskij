@@ -1,0 +1,90 @@
+{
+  "description": "Опис предметної області ПП",
+  "type": "object",
+  "properties": {
+    "workplace_info": {
+      "description": "Інформація про майстерню",
+      "type": "object",
+      "properties": {
+        "desc": {
+          "description": "Опис майстерні",
+          "type": "string"
+        },
+        "image": {
+          "description": "Фото майстерні",
+          "type": "string"
+        },
+        "location": {
+          "description": "Адреса майстерні",
+          "type": "string"
+        },
+        "size": {
+          "description": "Площа майстерні",
+          "type": "number"
+        }
+      },
+      "required": [
+        "desc",
+        "image",
+        "location",
+        "size"
+      ]
+    },
+    "consumer": {
+      "description": "Опис користувача",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я користувача",
+          "type": "string"
+        },
+        "photo": {
+          "description": "Фото користувача",
+          "type": "string"
+        },
+        "info": {
+          "description": "Дані авторизації",
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Ім'я користувача",
+              "type": "string"
+            },
+            "photo": {
+              "description": "Фото користувача",
+              "type": "string"
+            },
+            "telephone": {
+              "description": "Номер телефону користувача",
+              "type": "string"
+            },
+            "e_mail": {
+              "description": "Пошта користувача",
+              "type": "string"
+            },
+            "login": {
+              "description": "Логін користувача",
+              "type": "string"
+            },
+            "age": {
+              "description": "Вік користувача",
+              "type": "string"
+            },
+            
+          },
+          "name": [
+            "photo",
+            "telephone",
+            "e_mail",
+            "login",
+            "age"
+          ]
+        }
+      },
+      "name": [
+        "photo",
+        "info"
+      ]
+    }
+  }
+}

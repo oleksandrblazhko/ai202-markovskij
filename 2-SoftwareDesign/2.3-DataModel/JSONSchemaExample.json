@@ -1,0 +1,20 @@
+{
+  "workplace_info": {
+    "desc": "Облаштовано за новим стандартмо безпеки",
+    "image": {},
+    "location": "вул.Корольова №2",
+    "size": "70"
+  },
+  "consumer": {
+    "name": "Марков",
+    "photo": {},
+    "info": {
+      "name": "Daniil",
+      "photo": {},
+      "telephone": "+380682872111",
+      "e_mail": "test@gmail.com",
+      "login": "kizukkk",
+      "age": "72",
+    }
+  }
+}
