@@ -130,7 +130,7 @@
           "maxLength": 1
         }
       },
-      "required": [ "image", "image", "age", "user_account" ]
+      "required": [ "image", "name", "age", "user_account" ]
     },
     "manager": {
       "description": "Обліковий запис Менеджера",
@@ -165,7 +165,7 @@
           "standart": false
         }
       },
-      "required": [ "image", "image", "age", "user_account", "access" ]
+      "required": [ "image", "name", "age", "user_account", "access" ]
     }
   }
 }
