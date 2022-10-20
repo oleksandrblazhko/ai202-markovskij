@@ -1,0 +1,172 @@
+{
+  "description": "Entity",
+  "type": "object",
+  "properties": {
+    "workplace": {
+      "description": "Майстерня",
+      "type": "object",
+      "properties": {
+        "address": {
+          "description": "Адреса майстерні",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "image": {
+          "description": "Фото майстерні",
+          "type": "string",
+          "maxLength": 240
+        },
+        "size": {
+          "description": "Площа приміщення",
+          "type": "number",
+          "minSize": 1,
+          "maxSize": 65535
+        },
+        "dataModernization": {
+          "description": "Дата модернізації",
+          "type": "string",
+          "format": "date"
+        },
+        "price": {
+          "description": "Ціна за оренду",
+          "type": "number",
+          "minimum": 320,
+          "maximum": 2e53
+        }
+      },
+      "required": [ "address", "image", "size", "dataModernization", "price" ]
+    },
+    "timeline": {
+      "description": "Графік",
+      "type": "object",
+      "properties": {
+        "sculptor": {
+          "description": "Посилання на Скульптора",
+          "type": "object",
+          "minLength": 1,
+          "maxLength": 1
+        },
+        "manager": {
+          "description": "Посилання на Менеджера",
+          "type": "object",
+          "minLength": 2,
+          "maxLength": 1
+        },
+        "workplace_": {
+          "description": "Посилання на майстерні",
+          "type": "array",
+          "minSize": 1,
+          "maxSize": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "object"
+          }
+        },
+        "dataMeeting": {
+          "description": "Дата зустрічі",
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [ "sculptor", "manager", "workplace_", "dataMeeting" ]
+    },
+    "user": {
+      "description": "Дані користувача",
+      "type": "object",
+      "properties": {
+        "login": {
+          "description": "Логін",
+          "type": "string",
+          "uniqueItems": true,
+          "minLength": 6,
+          "maxLength": 20
+        },
+        "email": {
+          "description": "Пошта",
+          "type": "string",
+          "pattern": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+          "uniqueItems": true
+        },
+        "phone": {
+          "description": "Номер телефону",
+          "type": "string",
+          "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$",
+          "uniqueItems": true
+        },
+        "dataRegistration": {
+          "description": "Дата реєстрації",
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [ "login", "email", "email", "dataRegistration" ]
+    },
+    "sculptor": {
+      "description": "Обліковий запис Скульптора",
+      "type": "object",
+      "properties": {
+        "image": {
+          "description": "Аватар",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 10240
+        },
+        "name": {
+          "description": "Ім'я'",
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 120
+        },
+        "age": {
+          "description": "Вік",
+          "type": "number",
+          "maxLength": 120
+        },
+        "user_account": {
+          "description": "Посилання на обліковий запис в системі",
+          "type": "object",
+          "uniqueItems": true,
+          "maxLength": 1
+        }
+      },
+      "required": [ "image", "name", "age", "user_account" ]
+    },
+    "manager": {
+      "description": "Обліковий запис Менеджера",
+      "type": "object",
+      "properties": {
+        "image": {
+          "description": "Аватар",
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 10240
+        },
+        "name": {
+          "description": "Ім'я'",
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 120
+        },
+        "age": {
+          "description": "Вік",
+          "type": "number",
+          "maxLength": 120
+        },
+        "user_account": {
+          "description": "Посилання на обліковий запис в системі",
+          "type": "object",
+          "uniqueItems": true,
+          "maxLength": 1
+        },
+        "access": {
+          "description": "Тип доступу",
+          "type": "boolean",
+          "standart": false
+        }
+      },
+      "required": [ "image", "name", "age", "user_account", "access" ]
+    }
+  }
+}
+
