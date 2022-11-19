@@ -1,0 +1,18 @@
+@startuml
+title Deployment for information System
+
+left to right direction
+
+node "<< Mobile App>>" as sm {
+   node "<< Android OS>>"{
+         component [~*.apk\n(.NET Xamarin)]
+   }
+   node "<< iPhone OS>>"{
+         component [~*.ipa\n(.NET Xamarin)]
+   }
+}
+
+interface "Mobile Sensor" as sn
+
+sn - sm
+@enduml
