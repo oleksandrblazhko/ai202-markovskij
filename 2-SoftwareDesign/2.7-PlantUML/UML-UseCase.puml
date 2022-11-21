@@ -1,0 +1,17 @@
+@startuml uml
+
+actor Скульптор as act #Pink
+
+rectangle System {
+    usecase (Отримати дані\nвід майстерні) as use1 #LightBlue
+    usecase (Сплатити рахунок) as use2 #LightBlue
+    usecase (Отримати доступ до\nконтролю температур) as use3 #LightBlue
+
+
+    act -- use1
+    use1 .> use2 : include
+    use2 .> use3 : include
+
+}
+
+@enduml

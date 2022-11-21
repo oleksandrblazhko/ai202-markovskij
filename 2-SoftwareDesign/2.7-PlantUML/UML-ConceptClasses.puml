@@ -1,0 +1,36 @@
+@startuml uml3
+
+title Concept Classes Diagram
+
+skinparam linetype ortho
+
+Class "Майстерня" as work {
+    Адреса
+    Фото
+    Дата Модернізації
+    Площа
+    Ціна
+}
+Class "Графік відвідування" as gr {
+    Скульптор
+    Менеджер
+    Майстерня
+    Дата
+}
+Class "Скульптор" as sc {
+    Аватар
+    Ім'я
+    Вік
+}
+
+Class "Менеджер" as mg{
+    Аватар
+    Ім'я
+    Рівень доступу
+}
+
+work" 1 " -- " * "gr
+gr" *" -- " 1 "sc 
+gr" *   " -- " 1 "mg
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+title Activity Diagram
+
+start
+
+:Користувач ролі Скульптор надає\nсписок бажаних майстерень; 
+
+if (Запит закінчився успішно?) then (yes)
+  :Дані надіслані;
+else (no)
+  :Помилка;
+endif
+
+stop
+
+@enduml
